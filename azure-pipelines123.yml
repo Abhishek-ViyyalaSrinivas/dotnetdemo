@@ -20,9 +20,9 @@ steps:
     arguments: '--configuration $(buildConfiguration)'
   displayName: 'dotnet build $(buildConfiguration)'
 
-Settings
 - task: DotNetCoreCLI@2
   inputs:
-    command: 'build'
+    command: 'publish'
     arguments: '--configuration $(buildConfiguration)'
   displayName: 'dotnet build $(buildConfiguration)'
+
